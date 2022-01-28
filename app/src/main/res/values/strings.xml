@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Posts</string>
+    <string name="description">Description</string>
+    <string name="all">ALL</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="user">User</string>
+    <string name="name">Name %1$s</string>
+    <string name="email">Email %1$s</string>
+    <string name="phone">Phone %1$s</string>
+    <string name="website">Website %1$s</string>
+    <string name="comments">Comments</string>
+</resources>
