@@ -10,15 +10,15 @@ interface PostRepository {
 
     fun getPostsFromDB(): Single<List<Post>>
 
-    fun fetchPosts() : Single<List<Post>>
+    fun fetchPosts(): Single<List<Post>>
 
     fun deletePost(post: Post): Single<Int>
 
     fun deleteAll(): Completable
 
-    fun insertAll(posts: List<Post>) : Completable
+    fun insertAll(posts: List<Post>): Completable
 
-    fun savePost(post: Post) : Completable
+    fun savePost(post: Post): Completable
 
     fun fetchComments(postId: Int): Single<List<Comments>>
 

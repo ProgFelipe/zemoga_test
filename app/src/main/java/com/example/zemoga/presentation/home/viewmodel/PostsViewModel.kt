@@ -57,8 +57,8 @@ class PostsViewModel @Inject constructor(
                         _loadingLiveData.value = false
                         _postLiveData.value = it.toMutableList()
                     }, {
-                        _loadingLiveData.value = false
-                    }
+                    _loadingLiveData.value = false
+                }
                 )
         )
     }
@@ -69,7 +69,7 @@ class PostsViewModel @Inject constructor(
                 .observeOn(observeOnScheduler).subscribe({
                     _postLiveData.value = mutableListOf()
                 }, {
-                    //Todo handle error
+                    // Todo handle error
                 })
         )
     }
@@ -81,7 +81,7 @@ class PostsViewModel @Inject constructor(
                 .observeOn(observeOnScheduler).subscribe({
                     onSuccess()
                 }, {
-                    //Todo handle error
+                    // Todo handle error
                 })
         )
     }
@@ -146,9 +146,9 @@ class PostsViewModel @Inject constructor(
                         _loadingLiveData.value = false
                         _userLiveData.value = it
                     }, {
-                        _loadingLiveData.value = false
-                        //Todo handle error
-                    }
+                    _loadingLiveData.value = false
+                    // Todo handle error
+                }
                 )
         )
     }
@@ -162,9 +162,9 @@ class PostsViewModel @Inject constructor(
                         _loadingLiveData.value = false
                         _commentsLiveData.value = it
                     }, {
-                        _loadingLiveData.value = false
-                        //Todo handle error
-                    }
+                    _loadingLiveData.value = false
+                    // Todo handle error
+                }
                 )
         )
     }

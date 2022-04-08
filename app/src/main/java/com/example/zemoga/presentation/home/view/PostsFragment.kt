@@ -55,10 +55,10 @@ class PostsFragment : Fragment() {
             )
         )
 
-        //Swipe to delete
+        // Swipe to delete
         val swipeHandler = object : SwipeToDeleteCallback(this.requireContext()) {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                val currentList =  adapter.currentList.toMutableList()
+                val currentList = adapter.currentList.toMutableList()
                 currentList.removeAt(viewHolder.adapterPosition)
                 viewModel.updateList(currentList)
             }

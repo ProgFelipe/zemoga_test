@@ -26,7 +26,7 @@ abstract class SwipeToDeleteCallback(context: Context) :
         return false // We don't want support moving items up/down
     }
 
-    //DeleteView
+    // DeleteView
     override fun onChildDraw(
         canvas: Canvas,
         recyclerView: RecyclerView,

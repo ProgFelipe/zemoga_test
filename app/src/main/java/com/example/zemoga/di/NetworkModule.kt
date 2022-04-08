@@ -37,7 +37,7 @@ class NetworkModule {
             .connectTimeout(TIME_LIMIT, TimeUnit.MILLISECONDS)
             .writeTimeout(TIME_LIMIT, TimeUnit.MILLISECONDS)
             .readTimeout(TIME_LIMIT, TimeUnit.MILLISECONDS)
-        
+
         if (DEBUG) {
             val httpLoginInterceptor = HttpLoggingInterceptor()
             httpLoginInterceptor.level = HttpLoggingInterceptor.Level.BODY
@@ -63,5 +63,4 @@ class NetworkModule {
         )
         .client(okHttpClient)
         .build()
-
 }

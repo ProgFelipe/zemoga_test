@@ -40,10 +40,10 @@ class FavoriteFragment : Fragment() {
 
         recycler_view_favorite_posts.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         recycler_view_favorite_posts.adapter = adapter
-        //Swipe to delete
+        // Swipe to delete
         val swipeHandler = object : SwipeToDeleteCallback(this.requireContext()) {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                val currentList =  adapter.currentList.toMutableList()
+                val currentList = adapter.currentList.toMutableList()
                 val deletedPosition = viewHolder.adapterPosition
                 currentList.removeAt(viewHolder.adapterPosition)
                 viewModel.deleteFavoritePost(deletedPosition)

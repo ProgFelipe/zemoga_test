@@ -2,9 +2,9 @@ package com.example.zemoga.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.zemoga.data.database.AppDatabase
 import com.example.zemoga.data.PostRepository
 import com.example.zemoga.data.PostRepositoryImpl
+import com.example.zemoga.data.database.AppDatabase
 import com.example.zemoga.data.network.PostsApi
 import dagger.Module
 import dagger.Provides

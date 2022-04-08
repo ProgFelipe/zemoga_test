@@ -12,10 +12,10 @@ interface PostDao {
     fun getAll(): Single<List<Post>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(posts: List<Post>) : Completable
+    fun insertAll(posts: List<Post>): Completable
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(post: Post) : Completable
+    fun insert(post: Post): Completable
 
     @Delete
     fun delete(post: Post): Single<Int>
